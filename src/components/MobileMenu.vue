@@ -73,29 +73,29 @@ const backMenu = () => {
 
 const mainOptions = [
     {
-        id: 'AwardingBodies',
-        name: 'Awarding Bodies',
-        // image: usePage().props.assetURL ? usePage().props.assetURL + '/web-assets/WebRevamp/awarding.svg' : '../../web-assets/WebRevamp/awarding.svg'
+        id: 'maintopics',
+        name: 'Main Topics',
+        image: 'https://cdn-icons-png.flaticon.com/128/2436/2436855.png'
     },
     {
-        id: 'GetCertified',
-        name: 'Get Certified',
-        // image: usePage().props.assetURL ? usePage().props.assetURL + '/web-assets/WebRevamp/certified.svg' : '../../web-assets/WebRevamp/certified.svg'
+        id: 'certificates',
+        name: 'Certificates',
+        image: 'https://cdn-icons-png.flaticon.com/128/2247/2247866.png'
     },
     {
-        id: 'LiveOnlineCourses',
-        name: 'Live Online Courses',
-        // image: usePage().props.assetURL ? usePage().props.assetURL + '/web-assets/WebRevamp/online.svg' : '../../web-assets/WebRevamp/online.svg'
+        id: 'courses',
+        name: 'Courses',
+        image: 'https://cdn-icons-png.flaticon.com/128/11515/11515007.png'
     },
     {
-        id: 'FindYourCareerPath',
-        name: 'Find Your Career Path',
-        // image: usePage().props.assetURL ? usePage().props.assetURL + '/web-assets/WebRevamp/path.svg' : '../../web-assets/WebRevamp/path.svg'
+        id: 'careers',
+        name: 'Careers & Jobs',
+        image: 'https://cdn-icons-png.flaticon.com/128/2179/2179306.png'
     },
     {
-        id: 'FreeResources',
-        name: 'Free Resources',
-        // image: usePage().props.assetURL ? usePage().props.assetURL + '/web-assets/WebRevamp/resources.svg' : '../../web-assets/WebRevamp/resources.svg'
+        id: 'about',
+        name: 'About',
+        image: 'https://cdn-icons-png.flaticon.com/128/3815/3815602.png'
     }
 ];
 
@@ -627,34 +627,34 @@ const categories = ref([
                                                 </div>
                                                 <div @click="showCategories = true"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
-                                                    <div class="flex gap-1 items-center">
-                                                        <h3 class="text-base font-medium text-ash-650">Explore your choices
+                                                    <div class="flex gap-2 items-center">
+                                                        <h3 class="text-base font-medium text-ash-650">Explore your
+                                                            choices
                                                         </h3>
                                                     </div>
                                                 </div>
                                                 <div @click="closeDrawer"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
-                                                    <div class="flex gap-1 items-center">
-                                                        <h3 class="text-base font-medium text-ash-650">Corporate
-                                                            Training</h3>
+                                                    <div class="flex gap-2 items-center">
+                                                        <h3 class="text-base font-medium text-ash-650">Sample Link 1
+                                                            </h3>
                                                     </div>
                                                 </div>
                                                 <div @click="closeDrawer"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
-                                                    <div class="flex gap-1 items-center">
-                                                        <h3 class="text-base font-medium text-ash-650">Become an
-                                                            Instructor</h3>
+                                                    <div class="flex gap-2 items-center">
+                                                        <h3 class="text-base font-medium text-ash-650">Sample Link 2</h3>
                                                     </div>
                                                 </div>
                                                 <div @click="closeDrawer"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
-                                                    <div class="flex gap-1 items-center">
+                                                    <div class="flex gap-2 items-center">
                                                         <h3 class="text-base font-medium text-ash-650">Log In</h3>
                                                     </div>
                                                 </div>
                                                 <div @click="closeDrawer"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
-                                                    <div class="flex gap-1 items-center">
+                                                    <div class="flex gap-2 items-center">
                                                         <h3 class="text-base font-medium text-ash-650">Sign Up</h3>
                                                     </div>
                                                 </div>
@@ -691,7 +691,7 @@ const categories = ref([
                                                         @click="openSubMenu(category)"
                                                         class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2"
                                                         :class="{ 'lg:bg-ash-850': activeCategory === index, 'hover:bg-gray-100': activeCategory !== index }">
-                                                        <div class="flex gap-1 items-center">
+                                                        <div class="flex gap-2 items-center">
                                                             <img loading="lazy" :src="category.image" alt="image"
                                                                 class="w-7 h-7">
                                                             <h3 class="text-base font-medium text-ash-650">{{
@@ -703,25 +703,24 @@ const categories = ref([
                                                             class="sm:grid sm:grid-cols-1 gap-4 border-t border-ash-1500 pt-2">
                                                             <div class="flex flex-col">
                                                                 <MainTopicsDrawer :name="'Main Topics'"
-                                                                    :isOpen="activeDrawer === 'AwardingBodies'"
+                                                                    :isOpen="activeDrawer === 'maintopics'"
                                                                     @close="OptioncloseDrawer" @back-menu="backMenu" />
                                                                 <CertificatesDrawer :name="'Certificates'"
-                                                                    :isOpen="activeDrawer === 'GetCertified'"
+                                                                    :isOpen="activeDrawer === 'certificates'"
                                                                     @close="OptioncloseDrawer" @back-menu="backMenu" />
                                                                 <CoursesDrawer :name="'Courses'"
-                                                                    :isOpen="activeDrawer === 'LiveOnlineCourses'"
+                                                                    :isOpen="activeDrawer === 'courses'"
                                                                     @close="OptioncloseDrawer" @back-menu="backMenu" />
-                                                                <CareerPathDrawer
-                                                                    :name="'Careers & Jobs '"
-                                                                    :isOpen="activeDrawer === 'FindYourCareerPath'"
+                                                                <CareerPathDrawer :name="'Careers & Jobs '"
+                                                                    :isOpen="activeDrawer === 'careers'"
                                                                     @close="OptioncloseDrawer" @back-menu="backMenu" />
                                                                 <AboutDrawer :name="'About'"
-                                                                    :isOpen="activeDrawer === 'FreeResources'"
+                                                                    :isOpen="activeDrawer === 'about'"
                                                                     @close="OptioncloseDrawer" @back-menu="backMenu" />
                                                                 <div class="flex flex-col">
                                                                     <div v-for="(option, index) in mainOptions"
                                                                         :key="index" @click="openDrawer(option.id)"
-                                                                        class="flex items-center py-3 cursor-pointer transition-all duration-300 rounded-2 flex-row flex-grow"
+                                                                        class="flex items-center py-3 cursor-pointer transition-all duration-300 rounded-2 flex-row flex-grow gap-2"
                                                                         :class="{ 'bg-beige-300': activeTab === index }">
                                                                         <img loading="lazy" :src="option.image"
                                                                             :alt="option.name" class="w-7 h-7">

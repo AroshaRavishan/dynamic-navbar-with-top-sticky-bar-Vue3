@@ -809,12 +809,12 @@ provide('toggleDrawer', toggleDrawer);
                 <div class="flex">
                     <ul class="flex space-x-4 items-center">
                         <li>
-                            <router-link to="#Corporate" class="text-black-900 text-base font-bold">Corporate
-                                Training</router-link>
+                            <router-link to="#Corporate" class="text-black-900 text-base font-bold">Sample Link
+                                1</router-link>
                         </li>
                         <li>
-                            <router-link to="#Instructor" class="text-black-900 text-base font-bold">Become an
-                                Instructor</router-link>
+                            <router-link to="#Instructor" class="text-black-900 text-base font-bold">Sample Link
+                                2</router-link>
                         </li>
                     </ul>
                 </div>
