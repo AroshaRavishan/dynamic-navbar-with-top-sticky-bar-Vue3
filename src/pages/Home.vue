@@ -1,9 +1,16 @@
+<script setup>
+import HeroBanner from '../components/HomePageComponents/HeroBanner.vue';
+import Slider from '../components/HomePageComponents/Slider.vue';
+import WebLayout from '../layouts/WebLayout.vue';
+</script>
+
 <template>
     <WebLayout>
-        <div class="">helooooo</div>
+
+        <HeroBanner />
+    
+        <Slider/>
+        
     </WebLayout>
 </template>
 
-<script setup>
-import WebLayout from '../layouts/WebLayout.vue';
-</script>

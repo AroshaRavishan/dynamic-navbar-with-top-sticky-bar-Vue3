@@ -739,13 +739,6 @@ provide('toggleDrawer', toggleDrawer);
                                                                     categories[activeCategory].subcategories[activeSubcategory].name
                                                                     }} Courses
                                                                 </h3>
-                                                                <!-- <p class="mt-5 text-sm font-normal text-ash-1400">{{ categories[activeCategory].subcategories[activeSubcategory].description }}</p>
-                                                                <div class="py-4 border-b border-ash-1500">
-                                                                    <button class="rounded-1 border border-black-500 text-black-500 text-base font-semibold py-2.5 px-12 hover:text-black-500 cursor-pointer">View all Courses</button>
-                                                                </div>
-                                                                <div class="pt-5">
-                                                                    <h4 class="text-lg font-semibold text-ash-650">Trending Courses</h4>
-                                                                </div> -->
                                                                 <ul
                                                                     class="sm:grid sm:grid-cols-2 gap-y-6 gap-x-4 mt-7 h-[170px] 4xl:h-auto overflow-auto">
                                                                     <li v-for="(course, courseIndex) in categories[activeCategory].subcategories[activeSubcategory].courses"
@@ -764,9 +757,7 @@ provide('toggleDrawer', toggleDrawer);
                                                                 <button
                                                                     class="mt-7 text-black-900 text-base font-semibold hover:text-black-500 flex gap-2 items-center border-b border-transparent hover:border-b hover:border-black-900 cursor-pointer transition-all duration-300 ease-in-out w-max">
                                                                     View all trending courses
-                                                                    <!-- <img loading="lazy"
-                                                                        :src="$page.props.assetURL ? $page.props.assetURL + '/web-assets/Arrow-Up.svg' : '../../web-assets/Arrow-Up.svg'"
-                                                                        alt="Arrow-Up svg" class=""> -->
+                                                                    <img src="https://cdn-icons-png.flaticon.com/128/16116/16116612.png"  alt="Right arrow" title="Right arrow" width="20" height="20" class="lzy lazyload--done">
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -822,14 +813,15 @@ provide('toggleDrawer', toggleDrawer);
                     <div class="flex items-center space-x-4">
                         <router-link to="#Login"
                             class="rounded-lg text-black-900 text-base font-semibold py-2.5 px-6 hover:text-black-500 flex gap-2 items-center border border-transparent hover:border-black-900 cursor-pointer transition-all duration-300 ease-in-out">
-                            Login
+                            Sign in
                         </router-link>
                     </div>
                 </div>
                 <div class="hidden lg:block">
                     <div class="flex items-center space-x-4">
                         <router-link to="#Register"
-                            class="rounded-lg border border-black-800 text-black-900 text-base font-semibold py-2.5 px-6 hover:text-black-500 cursor-pointer">Register</router-link>
+                            class="rounded-lg border border-black-800 text-black-900 text-base font-semibold py-2.5 px-6 hover:text-black-500 cursor-pointer">Sign
+                            Up</router-link>
                     </div>
                 </div>
             </div>

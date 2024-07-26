@@ -649,7 +649,7 @@ const categories = ref([
                                                 <div @click="closeDrawer"
                                                     class="justify-between py-3 cursor-pointer transition-colors duration-200 flex gap-2 items-center rounded-2">
                                                     <div class="flex gap-2 items-center">
-                                                        <h3 class="text-base font-medium text-ash-650">Log In</h3>
+                                                        <h3 class="text-base font-medium text-ash-650">Sign In</h3>
                                                     </div>
                                                 </div>
                                                 <div @click="closeDrawer"
