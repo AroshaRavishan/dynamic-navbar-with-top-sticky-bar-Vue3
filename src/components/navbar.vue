@@ -573,8 +573,8 @@ provide('toggleDrawer', toggleDrawer);
 </script>
 
 <template>
-    <nav class="bg-beige-300 sticky w-full py-4 lg:py-0 top-0 z-10">
-        <div class="px-6 xl:px-10 flex items-center justify-between">
+    <nav class="bg-beige-300 sticky w-full py-4 lg:py-0 top-0 z-10" id="main-navbar">
+        <div class="container flex items-center justify-between">
             <div class="flex-shrink-0 flex gap-6 xl:gap-14 items-center">
                 <img loading="lazy" src="https://i.imghippo.com/files/LzYzY1720858499.png" alt="GelLogo"
                     class="w-[180px]">
@@ -757,7 +757,9 @@ provide('toggleDrawer', toggleDrawer);
                                                                 <button
                                                                     class="mt-7 text-black-900 text-base font-semibold hover:text-black-500 flex gap-2 items-center border-b border-transparent hover:border-b hover:border-black-900 cursor-pointer transition-all duration-300 ease-in-out w-max">
                                                                     View all trending courses
-                                                                    <img src="https://cdn-icons-png.flaticon.com/128/16116/16116612.png"  alt="Right arrow" title="Right arrow" width="20" height="20" class="lzy lazyload--done">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/128/16116/16116612.png"
+                                                                        alt="Right arrow" title="Right arrow" width="20"
+                                                                        height="20" class="lzy lazyload--done">
                                                                 </button>
                                                             </div>
                                                         </div>

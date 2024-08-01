@@ -1,12 +1,22 @@
 <script setup>
-import TopBanner from '../components/DetailPageComponents.vue/TopBanner.vue';
+import RelatedCourses from '../components/DetailPageComponents/RelatedCourses.vue';
+import StickySlider from '../components/DetailPageComponents/StickySlider.vue';
+import TopBanner from '../components/DetailPageComponents/TopBanner.vue';
 import WebLayout from '../layouts/WebLayout.vue';
 </script>
 
 
 <template>
     <WebLayout>
-        <TopBanner/>
+        <div class="bg-beige-300">
+
+            <TopBanner/>
+    
+            <StickySlider />
+
+            <RelatedCourses />
+
+        </div>
     </WebLayout>
 </template>
 
